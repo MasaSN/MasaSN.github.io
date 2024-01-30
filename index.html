@@ -11,6 +11,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#research {
+				overflow: hidden;
+			}
+	
+			.research-container {
+				display: flex;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				-webkit-overflow-scrolling: touch;
+			}
+	
+			.research-paper {
+				flex: 0 0 auto;
+				scroll-snap-align: start;
+				width: 60%; /* Adjust the width as needed */
+				margin-right: 20px; /* Adjust the margin between papers */
+			}
+		</style>
 	</head>
 	
 	<body class="is-preload">
@@ -47,7 +66,46 @@
 			</section>
 
 		<!-- Two -->
-			
+		<!-- the research stip-->
+
+
+		<section id="research" class="main style2">
+			<div class="container thin-strip">
+				<header class="major">
+					<h2>Research Papers I've read</h2>
+				</header>
+				<div class="research-container">
+					<!-- Add more research papers as needed -->
+					<!-- Example for a first research paper -->
+					<div class="research-paper">
+						<h3>Different multivariate techniques for automated classification of MRI data in Alzheimer’s disease and mild cognitive impairment</h3>
+						<p>Psychiatry Research: Neuroimaging</p>
+						<ul class="actions special">
+							<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0925492712002971" class="button">Read Paper</a></li>
+						</ul>
+					</div>
+					<!-- Example for a second research paper -->
+					<div class="research-paper">
+						<h3>Stacked Convolutional Auto-Encoders for
+							Hierarchical Feature Extraction</h3>
+						<p>convolutional neural network, auto-encoder, unsupervised
+							learning, classification.</p>
+						<ul class="actions special">
+							<li><a href="https://link.springer.com/chapter/10.1007/978-3-642-21735-7_7" class="button">Read Paper</a></li>
+						</ul>
+					</div>
+
+					<div class="research-paper">
+						<h3>Alzheimer’s disease diagnostics by a 3D deeply supervised adaptable convolutional network</h3>
+						<p>.</p>
+						<ul class="actions special">
+							<li><a href="https://arxiv.org/abs/1607.00556" class="button">Read Paper</a></li>
+						</ul>
+					</div>
+					<!-- Add more research papers as needed -->
+				</div>
+			</div>
+		</section>
 
 		<!-- Three -->
 			<section id="three" class="main style1 special">
@@ -421,6 +479,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Enable slider functionality using jQuery
+        $(document).ready(function () {
+            $('.research-container').on('scroll', function () {
+                // Add logic to handle scroll events if needed
+            });
+        });
+    </script>
 
 	</body>
 </html>
