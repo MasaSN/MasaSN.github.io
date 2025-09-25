@@ -61,7 +61,7 @@ const Projects = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black-60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="absolute bottom-4 left-4 p-3 md:p-6 rounded-2xl bg-black/20 backdrop-blur-md border-t border-white/10 z-10">
+            <div className="absolute bottom-4 left-4 p-4 rounded-2xl bg-black/20 backdrop-blur-md border-t border-white/10 z-10 h-40 w-full max-w-sm">
               <div className="flex flex-wrap gap-2 mb-3 ">
                 {project.tags.map((tagText, index) => (
                   <span
