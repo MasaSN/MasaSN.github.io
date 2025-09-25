@@ -6,14 +6,14 @@ import { HiOutlineViewGrid, HiDownload } from "react-icons/hi";
 const Hero = () => {
   const icons = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    "assets/langchain-color.svg",
-    "assets/pytorch-2.svg",
-    "assets/tensorflow-2.svg",
-    "assets/opencv-svgrepo-com.svg",
-    "assets/next-js.svg",
-    "assets/react-2.svg",
-    "assets/github-icon-2.svg",
-    "assets/mysql-logo-pure.svg",
+    "./assets/langchain-color.svg",
+    "./assets/pytorch-2.svg",
+    "./assets/tensorflow-2.svg",
+    "./assets/opencv-svgrepo-com.svg",
+    "./assets/next-js.svg",
+    "./assets/react-2.svg",
+    "./assets/github-icon-2.svg",
+    "./assets/mysql-logo-pure.svg",
   ];
   const container = {
     hidden: { opacity: 0 },
@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="max-w-2xl m-auto flex flex-col items-center justify-center text-center pt-24 md:pt-36 px-4 md:px-0 pb-8 overflow-hidden">
         <div>
           <img
-            src="assets/profile2.png"
+            src="./assets/profile2.png"
             alt="profile"
             className="rounded-full mb-4"
             width={150}
@@ -80,7 +80,7 @@ const Hero = () => {
             My Projects <HiOutlineViewGrid className="text-lg" />
           </a>
           <a
-            href="/assets/Masa_soudan_CV.pdf"
+            href="./assets/Masa_soudan_CV.pdf"
             download
             className=" w-full md:w-auto py-3 px-8 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm transition-colors duration-300 flex items-center justify-center gap-2"
           >

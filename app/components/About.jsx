@@ -55,7 +55,7 @@ const About = () => {
             volunteer and take part in leadership roles.
           </p>
           <a
-            href="/assets/Masa_soudan_CV.pdf"
+            href="./assets/Masa_soudan_CV.pdf"
             download
             className="custom-gradient py-4 px-8 text-white rounded-full font-semibold flex items-center justify-center gap-2 w-max hover:opacity-90 transition-opacity duration-300"
           >
